@@ -3,7 +3,7 @@ const dataLength = input.dataset.length;
 
 input.addEventListener("blur", () => {
   const inputLength = input.value.length;
-  if (Number(dataLength) <= inputLength) {
+  if (Number(dataLength) == inputLength) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {
